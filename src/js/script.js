@@ -20,3 +20,13 @@ $("ul.programm-caption").on("click", "li:not(.active)", function () {
     .addClass("active");
 });
 
+let development = document.getElementById("development-parallax");
+let home = document.getElementById("home-parallax");
+let header = document.getElementById("header");
+
+window.addEventListener("scroll", function () {
+  let value = window.scrollY;
+  development.style.marginTop = value * 0.4 + "px";
+  home.style.top = value * 0.5 + "px";
+  header.style.top = value * 0.5 + "px";
+});

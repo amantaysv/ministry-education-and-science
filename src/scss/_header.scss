@@ -1,5 +1,8 @@
 .header {
    font-family: PT Sans;
+   position: relative;
+   top: 0;
+   left: 0;
 
    &__btn {
       @include btn(153px, 32px, none, #2F80ED, 12px, #2F80ED);

@@ -1,9 +1,7 @@
 .development {
    background-color: $blue;
-
-   .development-parallax {
-      position: relative;
-   }
+   overflow: hidden;
+   position: relative;
 
    &__block {
       padding-top: 162px;
@@ -19,8 +17,9 @@
 
    &__img {
       position: absolute;
-      right: 0;
-      bottom: 0;
+      right: 10vw;
+      top: -380px;
+      // margin-top: -300px;
    }
 
    &__btn {

@@ -67,6 +67,9 @@
 
 .header {
   font-family: PT Sans;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .header__btn {
@@ -218,7 +221,19 @@
 .home {
   padding-top: 176px;
   padding-bottom: 177px;
-  background: url(../images/home/home__bg.png) center center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 
 .home__line {
@@ -401,9 +416,7 @@
 
 .development {
   background-color: #112F8A;
-}
-
-.development .development-parallax {
+  overflow: hidden;
   position: relative;
 }
 
@@ -421,8 +434,8 @@
 
 .development__img {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 10vw;
+  top: -380px;
 }
 
 .development__btn {
