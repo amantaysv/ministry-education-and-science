@@ -1,0 +1,29 @@
+.development {
+   background-color: $blue;
+
+   .wrapper {
+      position: relative;
+   }
+
+   &__block {
+      padding-top: 162px;
+      padding-bottom: 138px;
+   }
+
+   &__descr {
+      margin-top: 12px;
+      margin-bottom: 32px;
+      font-family: PT Sans;
+      font-size: 16px;
+   }
+
+   &__img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+   }
+
+   &__btn {
+      @include btn(197px, 40px, none, #fff, 14px, #fff)
+   }
+}

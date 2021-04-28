@@ -1,0 +1,18 @@
+.home {
+   padding-top: 176px;
+   padding-bottom: 177px;
+   background: url(../images/home/home__bg.png) center center / cover no-repeat;
+
+
+   &__line {
+      height: 1px;
+      background: #fff;
+      width: 75px;
+      margin: 24px auto 32px;
+   }
+
+   &__btn {
+      @include btn(160px, 36px, $blue, $blue, 13px, #fff);
+      margin: auto;
+   }
+}

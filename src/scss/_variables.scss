@@ -1,0 +1,75 @@
+$blue: #112F8A;
+
+@mixin btn($wd, $hg, $bg, $bc, $fz, $c) {
+   display: block;
+   width: $wd;
+   height: $hg;
+   background: $bg;
+   border: 1px solid #000;
+   border-color: $bc;
+   outline: none;
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: $fz;
+   line-height: $hg;
+   color: $c;
+   padding: 0;
+}
+
+.title {
+   font-family: PT Serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 32px;
+   line-height: 125%;
+}
+
+.subtitle {
+   font-family: PT Serif;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 125%;
+   color: #200E32;
+}
+
+.divide-line {
+   height: 1px;
+   width: 100%;
+   background: #E8E8E8;
+}
+
+.more-link {
+   font-family: PT Sans;
+   font-size: 14px;
+   line-height: 125%;
+   color: #989898;
+   text-decoration: none;
+   transition: .6s;
+
+   &:hover {
+      text-decoration: none;
+      color: $blue;
+   }
+}
+
+.date {
+   font-family: PT Sans;
+   font-size: 12px;
+   line-height: 125%;
+   color: #929292;
+}
+
+.carousel {
+   margin-right: -8px;
+   margin-left: -8px;
+}
+
+.fab {
+   color: #98C1F8;
+   transition: .6s;
+
+   &:hover {
+      color: $blue;
+   }
+}
