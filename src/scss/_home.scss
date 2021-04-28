@@ -25,5 +25,9 @@
    &__btn {
       @include btn(160px, 36px, $blue, $blue, 13px, #fff);
       margin: auto;
+
+      &:hover {
+         color: #fff;
+      }
    }
 }
