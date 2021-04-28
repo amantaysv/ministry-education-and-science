@@ -19,3 +19,4 @@ $("ul.programm-caption").on("click", "li:not(.active)", function () {
     .eq($(this).index())
     .addClass("active");
 });
+
