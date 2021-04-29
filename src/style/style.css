@@ -107,10 +107,6 @@
           align-items: center;
 }
 
-.header .navbar {
-  padding: 0;
-}
-
 .header .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,16 +958,12 @@
   .header__btn {
     width: 100%;
   }
-  .header .navbar {
-    height: 56px;
-  }
   .header .navbar-collapse .row {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
   .header .navbar-nav {
-    height: 56px;
     width: 100%;
   }
   .header .navbar-icons {
