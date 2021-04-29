@@ -1,6 +1,7 @@
 .header {
    font-family: PT Sans;
    min-height: 56px;
+
    &__btn {
       @include btn(153px, 32px, none, #2F80ED, 12px, #2F80ED);
       transition: .6s;
@@ -19,6 +20,7 @@
 
    .navbar {
       padding: 0;
+
       &-nav {
          display: flex;
          justify-content: space-around;
@@ -44,8 +46,6 @@
             height: 30px;
             object-fit: cover;
          }
-
-         &__text {}
       }
 
       &-toggler {
