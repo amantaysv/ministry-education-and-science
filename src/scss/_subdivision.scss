@@ -1,6 +1,6 @@
 .subdivision {
-   padding-top: 56px;
-   padding-bottom: 80px;
+   @include adaptive-value(padding-bottom, 80, 40, 0);
+   @include adaptive-value(padding-top, 56, 32, 0);
    background: linear-gradient(3.07deg, #FBFBFB 3.94%, rgba(252, 252, 252, 0) 106.65%);
 
    &-carousel {
@@ -11,17 +11,17 @@
 
          &__bg-1 {
             padding: 176px 16px 16px;
-            background: url(../images/subdivision/item-1.png);
+            background: url(../images/subdivision/item-1.png) center center / cover no-repeat;
          }
 
          &__bg-2 {
             padding: 176px 16px 16px;
-            background: url(../images/subdivision/item-2.png);
+            background: url(../images/subdivision/item-2.png) center center / cover no-repeat;
          }
 
          &__bg-3 {
             padding: 176px 16px 16px;
-            background: url(../images/subdivision/item-3.png);
+            background: url(../images/subdivision/item-3.png) center center / cover no-repeat;
          }
 
          &__title {

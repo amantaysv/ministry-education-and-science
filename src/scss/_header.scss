@@ -1,9 +1,6 @@
 .header {
    font-family: PT Sans;
-   position: relative;
-   top: 0;
-   left: 0;
-
+   min-height: 56px;
    &__btn {
       @include btn(153px, 32px, none, #2F80ED, 12px, #2F80ED);
       transition: .6s;
@@ -14,16 +11,99 @@
       }
    }
 
-   .navbar-brand {
-      &__img {
-         width: 30px;
-         height: 30px;
-         object-fit: cover;
+   .nav-first {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .navbar {
+      padding: 0;
+      &-nav {
+         display: flex;
+         justify-content: space-around;
+
+         &-1 {
+            width: 50%;
+         }
       }
 
-      &__text {
+      &-brand {
+         display: flex;
+         justify-content: center;
+         align-items: center;
          color: #656565;
+         text-decoration: none;
+         font-weight: bold;
+         text-transform: uppercase;
+         margin: 0;
          font-size: 11px;
+
+         &__img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+         }
+
+         &__text {}
+      }
+
+      &-toggler {
+         box-shadow: none;
+         padding: 0;
+
+         &.collapsed {
+            .burger__line {
+               background: #4E67B3;
+
+               &::before {
+                  top: 8px;
+                  transform: rotate(0);
+               }
+
+               &::after {
+                  bottom: 8px;
+                  transform: rotate(0);
+
+               }
+            }
+         }
+
+         .burger {
+            height: 26px;
+            width: 26px;
+
+            &__line {
+               position: relative;
+               width: 30px;
+               height: 2px;
+               background: none;
+
+               &::before {
+                  content: '';
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background: #4E67B3;
+                  transform: rotate(135deg);
+                  transition: .25s;
+               }
+
+               &::after {
+                  content: '';
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  bottom: 0;
+                  left: 0;
+                  background: #4E67B3;
+                  transform: rotate(45deg);
+                  transition: .25s;
+               }
+            }
+         }
       }
    }
 
@@ -80,6 +160,10 @@
 
          &:hover+.dropdown-menu {
             display: block;
+         }
+
+         &:hover~.home-parallax {
+            top: 250px;
          }
       }
 

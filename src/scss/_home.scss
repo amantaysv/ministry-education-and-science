@@ -1,7 +1,6 @@
 .home {
-   padding-top: 176px;
-   padding-bottom: 177px;
-   // background: url(../images/home/home__bg.png) center center / cover no-repeat;
+   @include adaptive-value(padding-top, 176, 160, 0);
+   @include adaptive-value(padding-bottom, 176, 97, 0);
    position: relative;
    overflow: hidden;
 
@@ -18,7 +17,7 @@
    &__line {
       height: 1px;
       background: #fff;
-      width: 75px;
+      @include adaptive-value(width, 75, 40, 0);
       margin: 24px auto 32px;
    }
 

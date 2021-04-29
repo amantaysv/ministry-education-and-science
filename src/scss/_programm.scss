@@ -1,9 +1,9 @@
 .programm {
-   padding-top: 96px;
+   @include adaptive-value(padding-top, 96, 33, 0);
 
    &__descr {
       font-family: PT Sans;
-      font-size: 14px;
+      @include adaptive-value(font-size, 14, 12, 0);
       line-height: 18px;
       color: #979797;
    }
@@ -24,7 +24,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      column-gap: 32px;
+      @include adaptive-value(column-gap, 32, 16, 0);
+      @include adaptive-value(row-gap, 32, 16, 0);
       list-style: none;
       margin-bottom: 40px;
    }
@@ -62,7 +63,7 @@
 
       &__text {
          font-family: PT Sans;
-         font-size: 16px;
+         @include adaptive-value(font-size, 16, 13, 0);
          line-height: 150%;
          color: #717B85;
          text-align: justify;
@@ -89,6 +90,11 @@
       .right {
          border: 1px solid #E4F2FF;
          padding: 60px;
+         @include adaptive-value(padding, 60, 15, 0);
+
+         &-subtitle {
+            @include adaptive-value(font-size, 24, 15, 0);
+         }
       }
 
       &__btn {

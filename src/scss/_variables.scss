@@ -21,7 +21,7 @@ $blue: #112F8A;
    font-family: PT Serif;
    font-style: normal;
    font-weight: bold;
-   font-size: 32px;
+   @include adaptive-value(font-size, 32, 18, 0);
    line-height: 125%;
 }
 

@@ -17,6 +17,12 @@
       &-item {
          padding-left: 15px;
          padding-right: 15px;
+         transition: .6s;
+
+         &:hover {
+            color: $blue;
+            cursor: pointer;
+         }
 
          &__wrapper {
             background: #F8F8F8;

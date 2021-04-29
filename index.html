@@ -7,25 +7,31 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Министерство образования и науки Кыргызской Республики</title>
    <link rel="stylesheet" href="./src/style/style.css">
-   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
 </head>
 
 <body>
    <header class="header" id="header">
       <nav class="navbar navbar-expand-lg">
          <div class="container">
-            <div class="collapse navbar-collapse">
+            <a href="#" class="navbar-brand">
+               <img src="./src/images/header/logo.svg" alt="" class="navbar-brand__img d-lg-none d-block">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <div class="burger align-items-center d-flex">
+                  <div class="burger__line"></div>
+               </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                <div class="row">
-                  <div class="col-12 d-flex justify-content-between align-items-center">
-                     <a href="#"
-                        class="navbar-brand d-flex justify-content-center align-items-center navbar-brand__text text-decoration-none font-weight-bold text-uppercase m-0">
+                  <div class="nav-first col-12">
+                     <a href="#" class="navbar-brand d-lg-flex d-none">
                         <img src="./src/images/header/logo.svg" alt="" class="navbar-brand__img">
                         министерство <br> образования
                         и науки <br>
                         кыргызской республики
                      </a>
-                     <ul class="navbar-nav justify-content-around w-50 ">
+                     <ul class="navbar-nav navbar-nav-1">
                         <li class="nav-item">
                            <a href="" class="nav-link">
                               <img class="me-1" src="./src/images/header/news.svg" alt="">
@@ -53,7 +59,7 @@
                      </ul>
                      <button class="header__btn">Открытые данные</button>
                   </div>
-                  <div class="col-12 d-flex justify-content-between align-items-center">
+                  <div class="nav-first col-12">
                      <ul class="navbar-nav">
                         <li class="nav-item dropdown me-5 dropright">
                            <a href="#" class="nav-link btn-prim dropdown-toggle" id="navbarDropdownMenuLink"
@@ -111,7 +117,7 @@
                            </ul>
                         </li>
                      </ul>
-                     <ul class="navbar-nav">
+                     <ul class="navbar-nav navbar-icons">
                         <li class="nav-item nav-item-border"><a href="" class="nav-link"><i
                                  class="fab fa-youtube"></i></a></li>
                         <li class="nav-item nav-item-border"><a href="" class="nav-link"><i
@@ -144,14 +150,14 @@
                в мире образования</h2>
             <div class="divide-line news__line-1"></div>
             <div class="row">
-               <div class="col-7">
+               <div class="col-12 col-lg-7">
                   <div class="news-main text-white">
-                     <p class="date">08.04.03 18:34</p>
+                     <p class="date news-main__date">08.04.03 18:34</p>
                      <p class="news-main__text">Встреча министра образования с учителями школы <br> Гимназии №70 города
                         бишкекка</p>
                   </div>
                </div>
-               <div class="col-5">
+               <div class="col-12 col-lg-5">
                   <div class="recent-announcements">
                      <h3 class="subtitle news__subtitle">Последние анонсы</h3>
                      <div class="recent-announcements__block">
@@ -418,15 +424,15 @@
                </ul>
                <div class="programm-content active">
                   <div class="row m-0 ">
-                     <div class="col-5 align-self-center p-0">
+                     <div class="col-12 col-lg-5 align-self-center p-0">
                         <div class="left">
                            <img class="programm-content__img img-fluid w-100"
                               src="./src/images/programm/programm__img.png" alt="">
                         </div>
                      </div>
-                     <div class="col-7 p-0">
+                     <div class="col-12 col-lg-7 p-0">
                         <div class="right">
-                           <h3 class="subtitle">Программа развития образования <br>
+                           <h3 class="right-subtitle subtitle">Программа развития образования <br>
                               в отдаленных программах</h3>
                            <p class="programm-content__text">
                               Свой визит в Таласской области министр образования и науки Алмазбек Бейшеналиев начал с
@@ -445,15 +451,15 @@
                </div>
                <div class="programm-content">
                   <div class="row m-0 ">
-                     <div class="col-5 align-self-center p-0">
+                     <div class="col-12 col-lg-5 align-self-center p-0">
                         <div class="left">
                            <img class="programm-content__img img-fluid w-100"
                               src="./src/images/programm/programm__img.png" alt="">
                         </div>
                      </div>
-                     <div class="col-7 p-0">
+                     <div class="col-12 col-lg-7 p-0">
                         <div class="right">
-                           <h3 class="subtitle">Программа2 развития образования <br>
+                           <h3 class="right-subtitle subtitle">Программа развития образования <br>
                               в отдаленных программах</h3>
                            <p class="programm-content__text">
                               Свой визит в Таласской области министр образования и науки Алмазбек Бейшеналиев начал с
@@ -472,15 +478,15 @@
                </div>
                <div class="programm-content">
                   <div class="row m-0 ">
-                     <div class="col-5 align-self-center p-0">
+                     <div class="col-12 col-lg-5 align-self-center p-0">
                         <div class="left">
                            <img class="programm-content__img img-fluid w-100"
                               src="./src/images/programm/programm__img.png" alt="">
                         </div>
                      </div>
-                     <div class="col-7 p-0">
+                     <div class="col-12 col-lg-7 p-0">
                         <div class="right">
-                           <h3 class="subtitle">Программа3 развития образования <br>
+                           <h3 class="right-subtitle subtitle">Программа развития образования <br>
                               в отдаленных программах</h3>
                            <p class="programm-content__text">
                               Свой визит в Таласской области министр образования и науки Алмазбек Бейшеналиев начал с
@@ -499,15 +505,15 @@
                </div>
                <div class="programm-content">
                   <div class="row m-0 ">
-                     <div class="col-5 align-self-center p-0">
+                     <div class="col-12 col-lg-5 align-self-center p-0">
                         <div class="left">
                            <img class="programm-content__img img-fluid w-100"
                               src="./src/images/programm/programm__img.png" alt="">
                         </div>
                      </div>
-                     <div class="col-7 p-0">
+                     <div class="col-12 col-lg-7 p-0">
                         <div class="right">
-                           <h3 class="subtitle">Программа4 развития образования <br>
+                           <h3 class="right-subtitle subtitle">Программа развития образования <br>
                               в отдаленных программах</h3>
                            <p class="programm-content__text">
                               Свой визит в Таласской области министр образования и науки Алмазбек Бейшеналиев начал с
@@ -524,7 +530,6 @@
                      </div>
                   </div>
                </div>
-
             </div>
             <div class="divide-line programm-divide-line"></div>
          </div>
@@ -536,7 +541,7 @@
                <a href="#" class="more-link">Весь календарь<i class="fas fa-chevron-right ms-2"></i></a>
             </div>
             <div class="row">
-               <div class="col">
+               <div class="col-12 col-lg-4">
                   <div class="calendar__card">
                      <h3 class="calendar__title">Центр развитие молодежи
                         откроется в Бишкеке</h3>
@@ -545,7 +550,7 @@
                         Бейшеналиев начал с Кара-Бууринского района села Ак-Жар. Там сгорел один учебный...</p>
                   </div>
                </div>
-               <div class="col">
+               <div class="col-12 col-lg-4">
                   <div class="calendar__card">
                      <h3 class="calendar__title">Центр развитие молодежи
                         откроется в Бишкеке</h3>
@@ -554,7 +559,7 @@
                         Бейшеналиев начал с Кара-Бууринского района села Ак-Жар. Там сгорел один учебный...</p>
                   </div>
                </div>
-               <div class="col">
+               <div class="col-12 col-lg-4">
                   <div class="calendar__card">
                      <h3 class="calendar__title">Центр развитие молодежи
                         откроется в Бишкеке</h3>
@@ -652,14 +657,14 @@
    <footer class="footer">
       <div class="container">
          <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-3">
                <h3 class="footer__title">О министерстве</h3>
                <p class="footer__text">Новости</p>
                <p class="footer__text">Галерея</p>
                <p class="footer__text">Наша история</p>
                <p class="footer__text">Программы развития</p>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-3">
                <h3 class="footer__title">Образование</h3>
                <p class="footer__text">Дошкольное образование</p>
                <p class="footer__text">Школьное образование</p>
@@ -668,13 +673,13 @@
                <p class="footer__text">Начальное профессионально
                   образование</p>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-3">
                <h3 class="footer__title">Исследования</h3>
                <p class="footer__text">Патенты</p>
                <p class="footer__text">Отчеты</p>
                <p class="footer__text">Гранты</p>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-3">
                <h3 class="footer__title">Мы в социальных сетях</h3>
                <ul class="navbar-nav d-flex flex-row">
                   <li class="footer-item me-3"><a href="" class="footer-link"><i class="fab fa-youtube"></i></a>

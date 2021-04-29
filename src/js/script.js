@@ -1,7 +1,20 @@
-$(".carousel").slick({
-  infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 1,
+function carouselInit() {
+  if ($(window).width() < 576) {
+    $(".carousel").slick("unslick");
+  } else {
+    $(".carousel").slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+    });
+  }
+}
+carouselInit();
+$(document).ready(function (e) {
+  carouselInit();
+});
+$(window).resize(function () {
+  carouselInit();
 });
 
 Array.from(document.getElementsByClassName("slick-arrow")).map((item) => {
@@ -22,11 +35,9 @@ $("ul.programm-caption").on("click", "li:not(.active)", function () {
 
 let development = document.getElementById("development-parallax");
 let home = document.getElementById("home-parallax");
-let header = document.getElementById("header");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
   development.style.marginTop = value * 0.4 + "px";
   home.style.top = value * 0.5 + "px";
-  header.style.top = value * 0.5 + "px";
 });

@@ -4,22 +4,21 @@
    position: relative;
 
    &__block {
-      padding-top: 162px;
-      padding-bottom: 138px;
+      @include adaptive-value(padding-top, 162, 24, 0);
+      @include adaptive-value(padding-bottom, 138, 109, 0);
    }
 
    &__descr {
-      margin-top: 12px;
-      margin-bottom: 32px;
       font-family: PT Sans;
-      font-size: 16px;
+      @include adaptive-value(margin-bottom, 32, 24, 0);
+      @include adaptive-value(margin-top, 12, 8, 0);
+      @include adaptive-value(font-size, 16, 13, 0);
    }
 
    &__img {
       position: absolute;
       right: 10vw;
       top: -380px;
-      // margin-top: -300px;
    }
 
    &__btn {
