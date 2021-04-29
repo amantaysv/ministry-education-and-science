@@ -5,7 +5,9 @@
 @import url(../libs/slick/slick.css);
 @import url(../libs/fancybox/css/jquery.fancybox.min.css);
 
-
+body.overflow-hidden {
+   overflow: hidden;
+}
 
 @import "../scss/adaptive-value";
 @import "../scss/variables";
