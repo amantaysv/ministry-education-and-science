@@ -59,6 +59,9 @@
    .development {
       padding-bottom: 275px;
       background: $blue url(../images/development/development__bg.png) center bottom / contain no-repeat;
+      &-parallax {
+         display: none;
+      }
    }
 
    .subdivision {

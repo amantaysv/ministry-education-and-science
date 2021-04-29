@@ -1009,6 +1009,9 @@
     padding-bottom: 275px;
     background: #112F8A url(../images/development/development__bg.png) center bottom/contain no-repeat;
   }
+  .development-parallax {
+    display: none;
+  }
   .subdivision-carousel-item {
     margin-bottom: 20px;
   }
