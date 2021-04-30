@@ -2,6 +2,7 @@
    background: #fff;
    font-family: PT Sans;
    // min-height: 56px;
+   z-index: 2;
 
    &__btn {
       @include btn(153px, 32px, none, #2F80ED, 12px, #2F80ED);

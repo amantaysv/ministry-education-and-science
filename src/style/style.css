@@ -69,9 +69,26 @@ body.overflow-hidden {
   color: #112F8A;
 }
 
+#layer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  opacity: 50%;
+  z-index: 5;
+}
+
+#layer.active {
+  display: block;
+}
+
 .header {
   background: #fff;
   font-family: PT Sans;
+  z-index: 2;
 }
 
 .header__btn {
@@ -337,10 +354,52 @@ body.overflow-hidden {
 }
 
 .home {
-  padding-top: calc(160px + 129 * ((100vw - 320px) / 1080));
+  padding-top: calc(160px + 160 * ((100vw - 320px) / 1080));
   padding-bottom: calc(97px + 79 * ((100vw - 320px) / 1080));
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
+}
+
+.home-bg {
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.home-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-bg-video iframe {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  pointer-events: none;
+}
+
+.home-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 70%;
+  z-index: 1;
 }
 
 .home-parallax {
@@ -558,7 +617,7 @@ body.overflow-hidden {
 .development__img {
   position: absolute;
   right: 10vw;
-  bottom: -550px;
+  bottom: -700px;
 }
 
 .development__btn {
@@ -1024,6 +1083,9 @@ body.overflow-hidden {
     -webkit-box-shadow: none;
             box-shadow: none;
     background: #fff;
+  }
+  .home {
+    min-height: auto;
   }
   .news__line-1 {
     display: none;

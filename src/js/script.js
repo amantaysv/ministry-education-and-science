@@ -10,6 +10,14 @@ $("ul.programm-caption").on("click", "li:not(.active)", function () {
     .addClass("active");
 });
 
+const burger = document.getElementById("burger");
+const root = document.getElementById("root");
+const layer = document.getElementById("layer");
+burger.addEventListener("click", function () {
+  root.classList.toggle("overflow-hidden");
+  layer.classList.toggle("active");
+});
+
 let development = document.getElementById("development-parallax");
 let home = document.getElementById("home-parallax");
 
@@ -41,5 +49,3 @@ $(window).resize(function () {
 Array.from(document.getElementsByClassName("slick-arrow")).map((item) => {
   return (item.textContent = "");
 });
-
-

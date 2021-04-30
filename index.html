@@ -9,14 +9,14 @@
    <link rel="stylesheet" href="./src/style/style.css">
 </head>
 
-<body>
+<body id="root">
    <header class="header fixed-top" id="header">
       <nav class="navbar navbar-expand-lg">
          <div class="container">
             <a href="#" class="navbar-brand">
                <img src="./src/images/header/logo.svg" alt="" class="navbar-brand__img d-lg-none d-block">
             </a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button id="burger" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <div class="burger align-items-center d-flex">
                   <div class="burger__line"></div>
@@ -145,10 +145,18 @@
       <section class="home" id="home">
          <div class="container">
             <img src="./src/images/home/home__bg.png" alt="" class="home-parallax" id="home-parallax">
+            <div class="home-bg d-none d-lg-block">
+               <div class="home-bg-video">
+                  <iframe
+                     src="https://www.youtube.com/embed/lKo5u1IwKRI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"
+                     title="YouTube video player" frameborder="0" allow="autoplay muted" allowfullscreen></iframe>
+               </div>
+               <div class="home-bg-layer"></div>
+            </div>
             <h1 class="title text-center text-white">Последние актуальные новости <br>
                в мире образования</h1>
             <div class="home__line"></div>
-            <a data-fancybox data-width="1000" href="https://www.youtube.com/watch?v=5qap5aO4i9A"
+            <a data-fancybox data-width="1000" href="https://www.youtube.com/embed/lKo5u1IwKRI"
                class="home__btn btn">Смотреть видео</a>
          </div>
       </section>
@@ -705,6 +713,7 @@
          <p class="footer-rights text-center">© 2016-2020. Министерство образования Кыргызской Республики</p>
       </div>
    </footer>
+   <div id="layer"></div>
    <script src="./src/libs/jquery/js/jquery.min.js"></script>
    <script src="./src/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
    <script src="./src/libs/slick/slick.min.js"></script>
