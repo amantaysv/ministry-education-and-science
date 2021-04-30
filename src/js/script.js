@@ -29,9 +29,9 @@ window.addEventListener("scroll", function () {
 
 function carouselInit() {
   if ($(window).width() < 576) {
-    $(".carousel").slick("unslick");
+    $(".subdivision-carousel").slick("unslick");
   } else {
-    $(".carousel").slick({
+    $(".subdivision-carousel").slick({
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -44,6 +44,31 @@ $(document).ready(function (e) {
 });
 $(window).resize(function () {
   carouselInit();
+});
+
+$(".authorities-carousel").slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: true,
+
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+        dots: true,
+      }
+    }
+  ]
 });
 
 Array.from(document.getElementsByClassName("slick-arrow")).map((item) => {

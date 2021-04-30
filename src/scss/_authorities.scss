@@ -46,7 +46,7 @@
       width: 24px;
       height: 24px;
       position: absolute;
-      top: 50%;
+      top: calc(50% - 20px);
       right: calc(100% + 19px);
       transform: translateY(-50%);
    }
@@ -58,7 +58,7 @@
       width: 24px;
       height: 24px;
       position: absolute;
-      top: 50%;
+      top: calc(50% - 20px);
       transform: translateY(-50%);
       left: calc(100% + 19px);
    }

@@ -89,3 +89,29 @@ $blue: #112F8A;
       display: block;
    }
 }
+
+.slick-dots {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   margin-top: 20px;
+
+   li {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: rgb(97, 97, 97);
+      margin-right: 10px;
+      opacity: 40%;
+
+      &.slick-active {
+         background: $blue;
+         opacity: 1;
+      }
+   }
+
+   button {
+      display: none;
+   }
+}
