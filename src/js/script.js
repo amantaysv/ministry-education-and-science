@@ -15,7 +15,7 @@ let home = document.getElementById("home-parallax");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
-  development.style.marginTop = value * 0.4 + "px";
+  development.style.marginBottom = value * 0.4 + "px";
   home.style.top = value * 0.5 + "px";
 });
 

@@ -40,6 +40,10 @@
       font-family: PT Sans;
       font-size: 14px;
       transition: .6s;
+      transform: skew(-25deg);
+      span {
+         transform: skew(25deg);
+      }
 
       &:hover {
          cursor: pointer;
@@ -48,8 +52,9 @@
       }
 
       &.active {
-         color: $blue;
+         color: #fff;
          border-color: $blue;
+         background: $blue;
       }
    }
 

@@ -70,8 +70,8 @@ body.overflow-hidden {
 }
 
 .header {
+  background: #fff;
   font-family: PT Sans;
-  min-height: 56px;
 }
 
 .header__btn {
@@ -111,18 +111,6 @@ body.overflow-hidden {
           align-items: center;
 }
 
-.header .navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.header .navbar-nav-1 {
-  width: 50%;
-}
-
 .header .navbar-brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,13 +127,32 @@ body.overflow-hidden {
   text-transform: uppercase;
   margin: 0;
   font-size: 11px;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+}
+
+.header .navbar-brand:hover {
+  color: #112F8A;
 }
 
 .header .navbar-brand__img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.header .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .navbar-nav-1 {
+  width: 50%;
 }
 
 .header .navbar-toggler {
@@ -330,7 +337,7 @@ body.overflow-hidden {
 }
 
 .home {
-  padding-top: calc(160px + 16 * ((100vw - 320px) / 1080));
+  padding-top: calc(160px + 129 * ((100vw - 320px) / 1080));
   padding-bottom: calc(97px + 79 * ((100vw - 320px) / 1080));
   position: relative;
   overflow: hidden;
@@ -551,7 +558,7 @@ body.overflow-hidden {
 .development__img {
   position: absolute;
   right: 10vw;
-  top: -380px;
+  bottom: -550px;
 }
 
 .development__btn {
@@ -582,6 +589,16 @@ body.overflow-hidden {
 .subdivision-carousel-item {
   padding-left: 8px;
   padding-right: 8px;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+}
+
+.subdivision-carousel-item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .subdivision-carousel-item__bg-1 {
@@ -710,6 +727,15 @@ body.overflow-hidden {
   -webkit-transition: .6s;
   -o-transition: .6s;
   transition: .6s;
+  -webkit-transform: skew(-25deg);
+      -ms-transform: skew(-25deg);
+          transform: skew(-25deg);
+}
+
+.programm-tab span {
+  -webkit-transform: skew(25deg);
+      -ms-transform: skew(25deg);
+          transform: skew(25deg);
 }
 
 .programm-tab:hover {
@@ -719,8 +745,9 @@ body.overflow-hidden {
 }
 
 .programm-tab.active {
-  color: #112F8A;
+  color: #fff;
   border-color: #112F8A;
+  background: #112F8A;
 }
 
 .programm-content {
@@ -861,12 +888,22 @@ body.overflow-hidden {
 
 .authorities-carousel-item__wrapper {
   background: #F8F8F8;
-  padding: 20px 50px;
+  padding: 20px 40px;
   text-transform: uppercase;
   font-size: 10px;
   font-weight: bold;
+  line-height: 1.5;
   -webkit-column-gap: 5px;
           column-gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .authorities .slick-prev {
@@ -953,10 +990,8 @@ body.overflow-hidden {
 
 @media (max-width: 576px) {
   .header {
-    height: 56px;
-    position: fixed;
+    height: 68px;
     width: 100%;
-    background: #fff;
     z-index: 10;
   }
   .header__btn {

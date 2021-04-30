@@ -8,6 +8,12 @@
       &-item {
          padding-left: 8px;
          padding-right: 8px;
+         transition: .6s;
+
+         &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+         }
 
          &__bg-1 {
             padding: 176px 16px 16px;
